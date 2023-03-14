@@ -13,9 +13,9 @@ td {
 }
 
 tr:nth-child(n) {
-  background-color: #d2db9c;
+  background-color: #ecf5bc;
 }
 
 tr:nth-child(2n) {
-  background-color: #92b9b7;
+  background-color: #b4ebe8;
 }

@@ -13,21 +13,21 @@ export const Profile = ({username, tag, location, avatar, followers, views, like
                         />
                         <p className={css.name}>{username}</p>
                         <p className={css.tag}>@{tag}</p>
-                        <p className="location">{location}</p>
+                        <p>{location}</p>
                     </div>
 
                     <ul className={css.stats}>
                         <li>
                         <span className={css.label}>Followers</span>
-                        <span className="quantity">{followers}</span>
+                        <span>{followers}</span>
                         </li>
                         <li>
                         <span className={css.label}>Views</span>
-                        <span className="quantity">{views}</span>
+                        <span>{views}</span>
                         </li>
                         <li>
                         <span className={css.label}>Likes</span>
-                        <span className="quantity">{likes}</span>
+                        <span>{likes}</span>
                         </li>
                     </ul>
                 </div>
