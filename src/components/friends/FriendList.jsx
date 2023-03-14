@@ -5,16 +5,18 @@ import styleSec from '../styleSection.module.css';
 
 export const FriendList = ({friends}) => {
     return <section className={styleSec.section}>
-              <ul className={css['friend-list']}> 
-                {friends.map(({avatar, name, isOnline, id}) =>
-                    <FriendListItem
-                        key={id}
-                        avatar={avatar}
-                        name={name}
-                        isOnline={isOnline}
-                    />
-                    )}
-              </ul>
+              <div className={styleSec.container}>
+                <ul className={css['friend-list']}> 
+                  {friends.map(({avatar, name, isOnline, id}) =>
+                      <FriendListItem
+                          key={id}
+                          avatar={avatar}
+                          name={name}
+                          isOnline={isOnline}
+                      />
+                      )}
+                </ul>
+              </div>
             </section>
             
 }
