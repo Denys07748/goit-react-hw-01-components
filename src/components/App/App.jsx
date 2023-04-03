@@ -2,7 +2,7 @@ import { Profile } from "../profile/Profile";
 import { Statistics } from "../statistics/Statistics";
 import { FriendList } from "../friends/FriendList";
 import { TransactionHistory } from "../transactions/TransactionHistory";
-import { Container } from "./App.styled";
+import css from "./App.module.css";
 
 import user from 'data/user.json';
 import data from 'data/data.json';
@@ -12,7 +12,7 @@ import transactions from 'data/transactions.json';
 
 export const App = () => {
   return (
-    <Container>
+    <div className={css.container}>
       <Profile 
       username={user.username}
       tag={user.tag}
@@ -35,6 +35,6 @@ export const App = () => {
       <TransactionHistory
       items={transactions}
       />
-    </Container>
+    </div>
   );
 };
